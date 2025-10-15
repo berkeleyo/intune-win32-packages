@@ -1,1 +1,2 @@
-Test-Path 'C:\\ProgramData\\*ORG*\\NewTeams.installed' | Out-Null; if ($?) { exit 0 } else { exit 1 }
+$marker = "<LOCAL_PATH><ORG>\NewTeams.installed"
+Test-Path $marker
