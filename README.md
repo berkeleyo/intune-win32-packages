@@ -1,18 +1,23 @@
+# Intune Win32 Packages
+
+Examples for reliable detection and silent installs.
+
+---
 
 # Intune Win32 Packages
 
-Real packaging examples with detection and silent switches.
+Reusable templates for Win32 app packaging with placeholder install/uninstall and detection scripts.
 
-## New Teams (Bootstrapper)
-- Install: `Teamsbootstrapper.exe -p`
-- Detection (marker-file): `C:\ProgramData\*ORG*\NewTeams.installed`
+## Quickstart
+1. Put your installer files in `samples/win32-app-template/`.
+2. Edit `install.cmd`, `uninstall.cmd`, and `detection.ps1`.
+3. Use `samples/Create-Win32App.ps1` as a starting point to package and upload.
 
-## Kyocera Cloud Print & Scan
-- Install: `cloudprintscan_kde-prod_*version*.exe -s -on "*ORG*"`
-- Uninstall: `cloudprintscan_kde-prod_*version*.exe -s -uninstall`
-- Detection: File version equals *version*`
+## Detection Ideas
+- Marker file (most reliable)
+- Registry uninstall key
+- File version check
+- AppX / WinGet presence
 
-## Tips
-- Use marker-file detection for reliability.
-- Run detection scripts in 64-bit PowerShell.
-- Use supersedence to remove prior versions.
+## Notes
+All organization-specific names are redacted.
