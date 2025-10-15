@@ -5,10 +5,10 @@ Real packaging examples with detection and silent switches.
 
 ## New Teams (Bootstrapper)
 - Install: `Teamsbootstrapper.exe -p`
-- Detection (marker-file): `C:\ProgramData\GLL\NewTeams.installed`
+- Detection (marker-file): `C:\ProgramData\*ORG*\NewTeams.installed`
 
 ## Kyocera Cloud Print & Scan
-- Install: `cloudprintscan_kde-prod_1.14.28216.1.exe -s -on "GLL"`
+- Install: `cloudprintscan_kde-prod_1.14.28216.1.exe -s -on "*ORG*"`
 - Uninstall: `cloudprintscan_kde-prod_1.14.28216.1.exe -s -uninstall`
 - Detection: File version equals `1.14.28216.1`
 
