@@ -1,2 +1,1 @@
-$marker = "C:\ProgramData\GLL\NewTeams.installed"
-Test-Path $marker
+Test-Path 'C:\\ProgramData\\GLL\\NewTeams.installed' | Out-Null; if ($?) { exit 0 } else { exit 1 }
