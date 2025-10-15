@@ -8,9 +8,9 @@ Real packaging examples with detection and silent switches.
 - Detection (marker-file): `C:\ProgramData\*ORG*\NewTeams.installed`
 
 ## Kyocera Cloud Print & Scan
-- Install: `cloudprintscan_kde-prod_1.14.28216.1.exe -s -on "*ORG*"`
-- Uninstall: `cloudprintscan_kde-prod_1.14.28216.1.exe -s -uninstall`
-- Detection: File version equals `1.14.28216.1`
+- Install: `cloudprintscan_kde-prod_*version*.exe -s -on "*ORG*"`
+- Uninstall: `cloudprintscan_kde-prod_*version*.exe -s -uninstall`
+- Detection: File version equals *version*`
 
 ## Tips
 - Use marker-file detection for reliability.
