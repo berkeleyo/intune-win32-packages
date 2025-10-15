@@ -1,0 +1,10 @@
+{
+  "description": "Win32 app packaging examples (New Teams bootstrapper, Kyocera Cloud Print & Scan, marker-file detection).",
+  "topics": [
+    "intune",
+    "win32",
+    "packaging",
+    "device-management"
+  ],
+  "created": "2025-10-15"
+}
